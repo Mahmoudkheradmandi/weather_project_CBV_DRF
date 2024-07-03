@@ -11,7 +11,7 @@ import statistics
 class Weather(APIView):
     def get(self, request, city, *args, **kwargs):
         
-        api_key = '8a2e5b5a178c85c8c41e7ceba8c5bc8a'
+        api_key = 'APY_KEY'
         url = f'http://api.openweathermap.org/data/2.5/forecast?q={city}&appid={api_key}&units=metric'
         
         response = requests.get(url)
